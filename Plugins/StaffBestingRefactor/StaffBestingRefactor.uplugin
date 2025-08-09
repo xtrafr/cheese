@@ -1,0 +1,24 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0.0",
+  "FriendlyName": "StaffBesting Refactor",
+  "Description": "UE5-compliant plugin replacing legacy hooks/offsets with public APIs (HUD/UMG, Enhanced Input, subsystems).",
+  "Category": "Gameplay",
+  "CreatedBy": "Migration Assistant",
+  "CreatedByURL": "https://example.com",
+  "DocsURL": "",
+  "MarketplaceURL": "",
+  "SupportURL": "",
+  "EngineVersion": "5.3.0",
+  "EnabledByDefault": false,
+  "CanContainContent": false,
+  "IsBetaVersion": true,
+  "Modules": [
+    {
+      "Name": "StaffBestingRefactor",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ]
+}
