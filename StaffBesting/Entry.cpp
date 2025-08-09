@@ -100,7 +100,7 @@ static bool HealthEsp = false;
 static bool skiptutorial = false;
 
 int SnapPositionint = 2;
-int SnapPosition›nt = 0;
+int SnapPositionCnt = 0;
 int SnapMesh = 0;
 
 static bool Minimap = false;
@@ -1996,7 +1996,7 @@ void PostRender(uintptr_t _this, UCanvas* canvas)
 			{
 				FVector2D drawtextat;
 				if (MyController->ProjectWorldLocationToScreen(GetBoneMatrix(Mesh, SnapMesh), drawtextat, 0) && drawtextat.IsValid());
-				canvas->K2_DrawLine({ (float)GetSystemMetrics(SM_CXSCREEN) / 2, (float)GetSystemMetrics(SM_CYSCREEN) / SnapPosition›nt/*135*/ }, drawtextat, ESPThickness, SnapColor);
+				canvas->K2_DrawLine({ (float)GetSystemMetrics(SM_CXSCREEN) / 2, (float)GetSystemMetrics(SM_CYSCREEN) / SnapPositionCnt/*135*/ }, drawtextat, ESPThickness, SnapColor);
 
 			}
 
@@ -2169,7 +2169,7 @@ void PostRender(uintptr_t _this, UCanvas* canvas)
 			}
 		
 			if (SnapPositionint == 0) {
-				SnapPosition›nt = 1;
+				SnapPositionCnt = 1;
 				SnapMesh = 0;
 				if (Below == true) {
 					Below = false;
@@ -2177,7 +2177,7 @@ void PostRender(uintptr_t _this, UCanvas* canvas)
 
 			}
 			else if (SnapPositionint == 1) {
-				SnapPosition›nt = 2;
+				SnapPositionCnt = 2;
 				SnapMesh = 8;
 
 				if (Middle == true) {
@@ -2185,7 +2185,7 @@ void PostRender(uintptr_t _this, UCanvas* canvas)
 				}
 			}
 			else if (SnapPositionint == 2) {
-				SnapPosition›nt = 400;
+				SnapPositionCnt = 400;
 				SnapMesh = 8;
 
 				if (Bottom == true) {
