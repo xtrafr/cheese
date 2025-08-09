@@ -1,0 +1,25 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0.0",
+  "FriendlyName": "StaffBesting UE5",
+  "Description": "Modern UE5 plugin providing legal HUD/UMG rendering, Enhanced Input setup, and diagnostics. Replaces legacy hooking/offset code.",
+  "Category": "Gameplay",
+  "CreatedBy": "Migration Assistant",
+  "CreatedByURL": "",
+  "DocsURL": "",
+  "MarketplaceURL": "",
+  "SupportURL": "",
+  "CanContainContent": false,
+  "IsBetaVersion": true,
+  "IsExperimentalVersion": true,
+  "Installed": false,
+  "Modules": [
+    {
+      "Name": "StaffBestingUE5",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ],
+  "Plugins": []
+}
