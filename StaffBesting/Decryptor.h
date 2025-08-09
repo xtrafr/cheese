@@ -3,6 +3,7 @@
 #include "decryption.h" 
 #include <Windows.h> 
 #include <string>
+#include <vector>
 
 
 uint64 BaseAddress = (uint64)GetModuleHandleA(0);
@@ -92,18 +93,28 @@ public:
 
 	static int32 GetSize(int32 Length, bool bIsPureAnsi);
 
-	char* DecryptNonWide();
-
-	wchar_t* DecryptWide();
+	// Return owned decrypted strings to avoid returning stack buffers
+	std::string DecryptNonWide();
+	std::wstring DecryptWide();
 
 	FORCEINLINE void CopyUnterminatedName(ANSICHAR* Out)
 	{
-		memcpy(Out, DecryptNonWide(), sizeof(ANSICHAR) * Header.Len);
+		if (!IsWide())
+		{
+			auto s = DecryptNonWide();
+			const size_t len = std::min(static_cast<size_t>(Header.Len), s.size());
+			memcpy(Out, s.data(), sizeof(ANSICHAR) * len);
+		}
 	}
 
 	FORCEINLINE void CopyUnterminatedName(WIDECHAR* Out)
 	{
-		memcpy(Out, DecryptWide(), sizeof(WIDECHAR) * Header.Len);
+		if (IsWide())
+		{
+			auto ws = DecryptWide();
+			const size_t len = std::min(static_cast<size_t>(Header.Len), ws.size());
+			memcpy(Out, ws.data(), sizeof(WIDECHAR) * len);
+		}
 	}
 
 	FORCEINLINE static int32 GetDataOffset()
@@ -115,7 +126,7 @@ public:
 
 	void GetWideName(WIDECHAR(&Out)[NAME_SIZE]);
 
-	WCHAR* Wchar();
+	std::wstring Wchar();
 
 	std::string String();
 
@@ -167,55 +178,53 @@ public:
 
 	FORCEINLINE FNameEntry& Resolve(FNameEntryHandle Handle) const
 	{
-		if (Handle.Offset < 0 && Handle.Block > NumBlocks() && Handle.Offset * Stride < FNameBlockOffsets)
-			return *reinterpret_cast<FNameEntry*>(Blocks[0] + Stride * 0);
-
+		const bool blockValid = Handle.Block < NumBlocks();
+		const bool offsetValid = Handle.Offset < FNameBlockOffsets;
+		if (!blockValid || !offsetValid || Blocks[Handle.Block] == nullptr)
+		{
+			static FNameEntry Dummy{};
+			Dummy.Header.bIsWide = 0;
+			Dummy.Header.Len = 0;
+			return Dummy;
+		}
 		return *reinterpret_cast<FNameEntry*>(Blocks[Handle.Block] + Stride * Handle.Offset);
 	}
 
 };
 
-wchar_t* FNameEntry::DecryptWide()
+std::wstring FNameEntry::DecryptWide()
 {
-
-	auto _DecryptWideEntry = (__int64(__fastcall*)(FNameEntry * Entry, wchar_t* Buffer))(BaseAddress + DecryptWideOffset);
-
-	wchar_t Buffer[1024];
-
-	__int64 Result = _DecryptWideEntry(this, Buffer);
-
-	return Buffer;
+	auto _DecryptWideEntry = (__int64(__fastcall*)(FNameEntry* Entry, wchar_t* Buffer))(BaseAddress + DecryptWideOffset);
+	wchar_t Buffer[NAME_SIZE]{};
+	(void)_DecryptWideEntry(this, Buffer);
+	return std::wstring(Buffer, Header.Len);
 }
 
-char* FNameEntry::DecryptNonWide()
+std::string FNameEntry::DecryptNonWide()
 {
-	auto _DecryptNonWideEntry = (__int64(__fastcall*)(FNameEntry * Entry, char* Buffer))(BaseAddress + DecryptNonWideOffset);
-
-	char Buffer[1024];
-
-	__int64 Result = _DecryptNonWideEntry(this, Buffer);
-
-	return Buffer;
+	auto _DecryptNonWideEntry = (__int64(__fastcall*)(FNameEntry* Entry, char* Buffer))(BaseAddress + DecryptNonWideOffset);
+	char Buffer[NAME_SIZE]{};
+	(void)_DecryptNonWideEntry(this, Buffer);
+	return std::string(Buffer, Header.Len);
 }
 
 std::string FNameEntry::String()
 {
 	if (IsWide()) {
-		WCHAR* DecryptedName = DecryptWide();
-		std::wstring Wide(DecryptedName, Header.Len);
+		auto Wide = DecryptWide();
 		return std::string(Wide.begin(), Wide.end());
 	}
 
-	char* DecryptedName = DecryptNonWide();
-	return std::string(DecryptedName, Header.Len);
+	auto Narrow = DecryptNonWide();
+	return Narrow;
 }
 
-WCHAR* FNameEntry::Wchar()
+std::wstring FNameEntry::Wchar()
 {
 	if (IsWide())
 		return DecryptWide();
 	else
-		return 0;
+		return std::wstring();
 }
 
 int32 FNameEntry::GetSize(int32 Length, bool bIsPureAnsi)

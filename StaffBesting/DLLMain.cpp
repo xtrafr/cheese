@@ -285,7 +285,7 @@ bool aimbotvischeck = 1;
 void PostRender(uintptr_t _this, UCanvas* canvas)
 {
 	if (!canvas)
-		return PostRender(_this, canvas);
+		return pRender(_this, canvas);
 
 	if (kekIsOff)return PostRender(_this, canvas);
 	CWINGui::SetupCanvas(canvas);

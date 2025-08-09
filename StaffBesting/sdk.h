@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include "memory.h"
 #include "unrealengine.h"
 class UObject
@@ -502,14 +502,13 @@ struct APlayerController : UObject
 		return;
 	}
 	bool ProjectWorldLocationToScreen(struct FVector WorldLocation, struct FVector2D& ScreenLocation, bool bPlayerViewportRelative)
-	{  
+	{
 		if (!ProjectWorldToScreen)
 			ProjectWorldToScreen = (uintptr_t)GetModuleHandleA(0) + 0x4fd7c60;
 		auto WorldToScreen = reinterpret_cast<bool(__fastcall*)(uintptr_t pPlayerController, FVector vWorldPos, FVector2D * vScreenPosOut, char)>(ProjectWorldToScreen);
 
-		WorldToScreen((uintptr_t)this, WorldLocation, &ScreenLocation, (char)0);
-		 
-		return WorldToScreen;
+		bool result = WorldToScreen((uintptr_t)this, WorldLocation, &ScreenLocation, (char)0);
+		return result;
 	}
 	void set_fov(float fov)
 	{
@@ -1600,7 +1599,7 @@ namespace CWINGui
 		{
 			//Text
 			FVector2D textPos = FVector2D{ pos.X + size.X / 2, pos.Y + size.Y / 2 };
-			TextCenter((const wchar_t*)("[Press Key]"), textPos, FLinearColor{1.0f, 1.0f, 1.0f, 1.0f}, false);
+			TextCenter((const wchar_t*)"[Press Key]", textPos, FLinearColor{1.0f, 1.0f, 1.0f, 1.0f}, false);
 
 			if (!CWINGui::Input::IsAnyMouseDown())
 			{
