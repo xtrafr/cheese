@@ -1,0 +1,177 @@
+﻿  Entry.cpp
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(62,111): warning C4099: 'FLinearColor': nombre de tipo visto anteriormente usando 'class' ahora se ve usando 'struct'
+  (compilando archivo de origen "Entry.cpp")
+      C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\unrealengine.h(91,7):
+      vea la declaración de 'FLinearColor'
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(92,26): warning C4099: 'FString': nombre de tipo visto anteriormente usando 'class' ahora se ve usando 'struct'
+  (compilando archivo de origen "Entry.cpp")
+      C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\unrealengine.h(246,7):
+      vea la declaración de 'FString'
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(92,110): warning C4099: 'FLinearColor': nombre de tipo visto anteriormente usando 'class' ahora se ve usando 'struct'
+  (compilando archivo de origen "Entry.cpp")
+      C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\unrealengine.h(91,7):
+      vea la declaración de 'FLinearColor'
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(92,158): warning C4099: 'FLinearColor': nombre de tipo visto anteriormente usando 'class' ahora se ve usando 'struct'
+  (compilando archivo de origen "Entry.cpp")
+      C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\unrealengine.h(91,7):
+      vea la declaración de 'FLinearColor'
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(92,268): warning C4099: 'FLinearColor': nombre de tipo visto anteriormente usando 'class' ahora se ve usando 'struct'
+  (compilando archivo de origen "Entry.cpp")
+      C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\unrealengine.h(91,7):
+      vea la declaración de 'FLinearColor'
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(1222,46): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(1222,41): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(1226,46): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(1226,41): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(1255,77): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(1274,104): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(1281,14): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(1294,72): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(1603,70): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(1970,95): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(1971,121): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(1972,95): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(1973,121): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\decryption.h(285,9): warning C4005: 'LOBYTE': redefinición de macro
+  (compilando archivo de origen "Entry.cpp")
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(206,9):
+      vea la definición anterior de “LOBYTE”
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\decryption.h(286,9): warning C4005: 'LOWORD': redefinición de macro
+  (compilando archivo de origen "Entry.cpp")
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(204,9):
+      vea la definición anterior de “LOWORD”
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\decryption.h(288,9): warning C4005: 'HIBYTE': redefinición de macro
+  (compilando archivo de origen "Entry.cpp")
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(207,9):
+      vea la definición anterior de “HIBYTE”
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\decryption.h(289,9): warning C4005: 'HIWORD': redefinición de macro
+  (compilando archivo de origen "Entry.cpp")
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(205,9):
+      vea la definición anterior de “HIWORD”
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\decryption.h(595,12): warning C4244: '=': conversión de 'unsigned __int64' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\decryption.h(600,11): warning C4244: '=': conversión de 'unsigned __int64' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\decryption.h(603,13): warning C4244: '=': conversión de 'unsigned __int64' a 'unsigned int'; posible pérdida de datos
+  (compilando archivo de origen "Entry.cpp")
+  
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(33,45): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(33,40): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(37,45): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(37,40): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(42,45): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(42,40): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(157,21): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(158,21): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(555,19): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(558,16): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(1219,9): warning C4477: 'printf' : la cadena de formato '%p' requiere un argumento de tipo 'void *', pero el argumento variádico 1 tiene el tipo 'TArray<AShooterCharacter *>'
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(1225,119): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(1225,111): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(1229,123): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(1229,111): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(1805,71): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(1805,62): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2006,29): warning C4309: '=': truncamiento de valor constante
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2019,42): warning C4309: '=': truncamiento de valor constante
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2097,38): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2097,22): warning C4244: 'inicializando': conversión de 'double' a 'const float'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2098,41): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2098,32): warning C4244: 'inicializando': conversión de 'double' a 'const float'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2153,26): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(1998,122): warning C4390: ';': se encontró una instrucción controlada vacía; ¿es esa la intención?
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(1697,12): warning C4101: 'Object': variable local sin referencia
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2207,9): warning C4477: 'printf' : la cadena de formato '%p' requiere un argumento de tipo 'void *', pero el argumento variádico 1 tiene el tipo 'uintptr_t'
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2209,9): warning C4477: 'printf' : la cadena de formato '%p' requiere un argumento de tipo 'void *', pero el argumento variádico 1 tiene el tipo 'uintptr_t'
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2211,9): warning C4477: 'printf' : la cadena de formato '%p' requiere un argumento de tipo 'void *', pero el argumento variádico 1 tiene el tipo 'State'
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2212,41): warning C4244: 'argumento': conversión de 'uintptr_t' a 'const uint32_t'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2213,9): warning C4477: 'printf' : la cadena de formato '%p' requiere un argumento de tipo 'void *', pero el argumento variádico 1 tiene el tipo 'uintptr_t'
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2227,51): warning C4244: 'argumento': conversión de 'T' a 'float'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2227,51): warning C4244:         with
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2227,51): warning C4244:         [
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2227,51): warning C4244:             T=uintptr_t
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2227,51): warning C4244:         ]
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2229,51): warning C4244: 'argumento': conversión de 'T' a 'float'; posible pérdida de datos
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2229,51): warning C4244:         with
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2229,51): warning C4244:         [
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2229,51): warning C4244:             T=uintptr_t
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2229,51): warning C4244:         ]
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Entry.cpp(2236,110): warning C4244: 'return': conversión de 'LRESULT' a 'int'; posible pérdida de datos
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\xutility(4710,18): warning C4244: '=': conversión de 'wchar_t' a 'char'; posible pérdida de datos
+  (compilando archivo de origen "Entry.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\xutility(4710,18):
+      el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+          C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Decryptor.h(206,21):
+          Vea la referencia a la creación de una instancia de la función plantilla "std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)" que se está compilando
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+              C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Decryptor.h(206,3):
+              vea la primera referencia a “std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string” en “FNameEntry::String”
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\xstring(793,17):
+          Vea la referencia a la creación de una instancia de la función plantilla "void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<wchar_t*,wchar_t*,_Size_type>(_Iter,const _Sent,_Size)" que se está compilando
+          with
+          [
+              _Size_type=unsigned __int64,
+              _Iter=wchar_t *,
+              _Sent=wchar_t *,
+              _Size=unsigned __int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\xstring(949,18):
+          Vea la referencia a la creación de una instancia de la función plantilla "_OutIt *std::_Copy_n_unchecked4<wchar_t*,_Size,char*>(_InIt,_SizeTy,_OutIt)" que se está compilando
+          with
+          [
+              _OutIt=char *,
+              _Size=unsigned __int64,
+              _InIt=wchar_t *,
+              _SizeTy=unsigned __int64
+          ]
+  
+     Creando biblioteca C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\x64\Release\StaffBesting.lib y objeto C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\x64\Release\StaffBesting.exp
+  Generando código
+  Previous IPDB not found, fall back to full compilation.
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(446): warning C4715: 'AShooterCharacter::ClearWeaponComponents': no todas las rutas de acceso de control devuelven un valor
+C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\Canvas.h(467): warning C4715: 'AShooterCharacter::ApplySkin': no todas las rutas de acceso de control devuelven un valor
+  All 290 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Generación de código finalizada
+  internal.vcxproj -> C:\Users\Admin\Downloads\staffbesting source code schmacko fatz\StaffBesting\x64\Release\StaffBesting.dll
